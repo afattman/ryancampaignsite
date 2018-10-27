@@ -31,7 +31,9 @@ router.get('/about', function(req, res, next) {
   res.render('about', { title: 'Fattman for Senate' });
 });
 
-
+router.get('/signin', function(req, res, next) {
+  res.render('signin', { title: 'Fattman for Senate' });
+});
 
 
 module.exports = router;

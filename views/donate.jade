@@ -48,12 +48,17 @@ block content
                 .invalid-feedback
                   | Valid last name is required.
             .mb-3
-              label(for='username') Employer
+              label(for='employer') Employer
               .input-group
                 .input-group-prepend
                 input#username.form-control(type='text', placeholder='', required='')
                 .invalid-feedback(style='width: 100%;')
-                  | Your username is required.
+            .mb-3
+              label(for='occupation') Occupation
+              .input-group
+                .input-group-prepend
+                input#username.form-control(type='text', placeholder='', required='')
+                .invalid-feedback(style='width: 100%;')
             .mb-3
               label(for='email')
                 | Email 
@@ -166,6 +171,10 @@ block content
                 input#cc-number.form-control(type='text', placeholder='', required='')
                 .invalid-feedback
                   | Credit card number is required
+
+            hr.mb-4
+            button.btn.btn-success.btn-lg.btn-block(type='submit') Donate
+      footer.my-5.pt-5.text-muted.text-center.text-small
 
     //
       Bootstrap core JavaScript
