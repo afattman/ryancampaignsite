@@ -1,0 +1,66 @@
+extends layout
+block content
+ body.bg-light
+    .container
+        .py-5.text-center
+        img.d-block.mx-auto.mb-4(src='images/hadleysmall.jpg', alt='', width='50%')
+
+      .container
+      .py-5.text-center
+        h2 Get Involved on the Fattman Campaign
+        p.lead Fill out the form below, to voluenteer or if you would like to contact me concerning  the campaign. For constituent  services visit my <a href="http://www.fattman.com/"  target="_blank">office website.</a>  Thanks for stopping by!
+      
+          form.needs-validation(novalidate='')
+          h4.mb-3
+            .row 
+                label(for='firstName') Name
+                input#firstName.form-control(type='text', placeholder='Jane Doe', value='', required='')
+                .invalid-feedback
+                  | Valid first name is required.
+                
+                label(for='subject') Subject
+                input#lastName.form-control(type='text', placeholder='Voulenteering, Contacting Ryan, Etc', value='', required='')
+                .invalid-feedback
+                  | Valid last name is required.
+                
+                label(for='email') Email
+                input#lastName.form-control(type='text', placeholder='Example@Gmail.com', value='', required='')
+                .invalid-feedback
+                  | Please enter a valid email address.
+                
+                label(for='messages') Message
+                input#lastName.form-control(type='text', placeholder="Hold Signs, Knock On doors, or any ideas taht you think would be helpful!", value='', required='')
+
+            hr.mb-4
+            button.btn.btn-primary.btn-lg.btn-block(type='submit') Join The Team
+      footer.my-5.pt-5.text-muted.text-center.text-small
+
+    //
+      Bootstrap core JavaScript
+      ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script.
+      window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\\/script>')
+    script(src='../../assets/js/vendor/popper.min.js')
+    script(src='../../dist/js/bootstrap.min.js')
+    script(src='../../assets/js/vendor/holder.min.js')
+    script.
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+      }, false);
+      });
+      }, false);
+      })();

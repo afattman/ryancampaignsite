@@ -1,0 +1,53 @@
+style(type='text/css').
+    .carousel{
+    width:640px;
+    }
+
+extends layout
+
+block content
+
+
+    
+    #myCarousel.carousel.slide(data-ride='carousel')
+    
+      .carousel-inner
+        .carousel-item.active
+          img.first-slide(src='images/largefattman.jpg', alt='First slide', width= '100%')
+          .container
+            .carousel-caption.d-none.d-md-block
+              
+            
+    .container.marketing
+     
+
+        // /.col-lg-4
+        // /.row
+        // START THE FEATURETTES
+        hr.featurette-divider
+        .row.featurette
+          .col-md-7.order-md-2
+            h2.featurette-heading
+              |About Ryan
+            p.lead
+              |While earning his BA at the University of Massachusetts Amherst, Kevin had the experience of studying abroad for a 
+              |semester at the Film & TV School of the Academy of Performing Arts in Prague (FAMU).
+              |He credits this semester for having a monumental impact on his filmmaking style, by
+              |incorporating elements of European cinema into his own works.
+              br
+              br
+              img.featurette-image.img-fluid.mx-auto(src='images/hadleywsign.jpg', alt='Generic placeholder image' height='10%')
+          .col-md-5.order-md-1
+            img.featurette-image.img-fluid.mx-auto(src='images/ryanNsteph.PNG', alt='Generic placeholder image')
+        hr.featurette-divider
+        .row.featurette
+          .col-md-7
+            h2.featurette-heading
+              |Home Videos to Hollywood
+              span.text-muted
+              br
+              br 
+            p.lead
+                |Kevin is a director from Western Massachusetts, currently living in Los Angeles. He is pursuing a graduate degree at USC School of Cinematic Arts.
+          .col-md-5
+            img.featurette-image.img-fluid.mx-auto(src='images/ryanelephant.jpg', alt='Generic placeholder image')
